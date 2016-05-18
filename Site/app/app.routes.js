@@ -13,7 +13,7 @@ appModule.config(['$routeProvider',
         templateUrl: '/app/components/sprawozdanie/sprawozdanieView.html',
         controller: 'sprawozdanieController'
       }, null)
-      .when('/oNas', {
+      .when('/onas', {
         templateUrl: '/app/components/oNas/oNasView.html',
         controller: 'oNasController'
       }, null)
@@ -25,7 +25,7 @@ appModule.config(['$routeProvider',
         templateUrl: '/app/components/kontakt/kontaktView.html',
         controller: 'kontaktController'
       }, null)
-      .when('/hymnAmazonek', {
+      .when('/hymnamazonek', {
         templateUrl: '/app/components/hymnAmazonek/hymnAmazonekView.html',
         controller: 'hymnAmazonekController'
       }, null)
