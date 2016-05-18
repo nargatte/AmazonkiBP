@@ -1,4 +1,4 @@
-appModule.directive('mainHeader' function() {
+appModule.directive('mainHeader', function() {
   return{
     templateUrl: './app/shared/header/headerView.js'
   };

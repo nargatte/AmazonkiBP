@@ -8,12 +8,26 @@
   <meta name="description" content=""/>
   <meta name="keywords" content=""/>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+
+  <script
+  			  src="https://code.jquery.com/jquery-1.12.3.min.js"
+  			  integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+  			  crossorigin="anonymous"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   <script src="/app/app.module.js"></script>
   <script src="/app/app.routes.js"></script>
   <script src="/app/shared/header/headerDirective.js"></script>
+  <script src="/app/shared/context/contextDirective.js"></script>
+  <script src="/app/components/stronaGlowna/stronaGlownaController.js"></script>
+  <script src="/app/components/stronaGlowna/stronaGlownaService.js"></script>
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
 </head>
-<body data-ng-app='appModule'>
+<body ng-app='appModule'>
   <main-header></main-header>
+  <main-context></main-context>
 </body>
 </html>
