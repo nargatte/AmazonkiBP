@@ -1,5 +1,5 @@
 appModule.directive('mainHeader', function() {
   return{
-    templateUrl: './app/shared/header/headerView.js'
+    templateUrl: './app/shared/header/headerView.html'
   };
 });

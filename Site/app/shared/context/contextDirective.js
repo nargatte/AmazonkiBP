@@ -1,5 +1,5 @@
 appModule.directive('mainContext', function() {
   return{
-    templateUrl: './app/shared/context/contextView.js'
+    templateUrl: './app/shared/context/contextView.html'
   };
 });
