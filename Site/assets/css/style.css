@@ -1,8 +1,30 @@
-body {
-     position: relative;
- }
-#stronaGlowna{
-  padding-top: 1000px;
+body{
 }
-#oNas{
+.stronaGlowna{
+  padding-top: 50px;
+  background-color: #00ffff;
+  color: #e6005c;
+}
+.oNas{
+  padding-top: 50px;
+}
+.status{
+  padding-top: 50px;
+}
+.sprawozdanie{
+  padding-top: 50px;
+}
+.hymnAmazonek{
+  padding-top: 50px;
+}
+.linki{
+  padding-top: 50px;
+}
+.kontakt{
+  padding-top: 50px;
+}
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
 }
