@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>AmazonkiBP</title>
-  <meta name="description" content=""/>
-  <meta name="keywords" content=""/>
-  <script
-			  src="https://code.jquery.com/jquery-2.2.4.min.js"
-			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-			  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script> -->
+    <title>AmazonkiBP</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
 
 
-  <script src="/app/app.module.js"></script>
-  <!--<script src="/app/app.routes.js"></script>-->
-  <!--SHARED-->
-  <script src="/app/shared/header/headerDirective.js"></script>
-  <script src="/app/shared/context/contextDirective.js"></script>
-  <!--COMPONENTS-->
-  <script src="/app/components/stronaGlowna/stronaGlownaDirective.js"></script>
-  <script src="/app/components/status/statusDirective.js"></script>
-  <script src="/app/components/sprawozdanie/sprawozdanieDirective.js"></script>
-  <script src="/app/components/oNas/oNasDirective.js"></script>
-  <script src="/app/components/linki/linkiDirective.js"></script>
-  <script src="/app/components/kontakt/kontaktDirective.js"></script>
-  <script src="/app/components/hymnAmazonek/hymnAmazonekDirective.js"></script>
-  <!--STYLE-->
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
-  <!--JS-->
-  <script src="/assets/js/navBar.js"></script>
+    <script src="/app/app.module.js"></script>
+    <!--SHARED-->
+    <script src="/app/shared/header/headerDirective.js"></script>
+    <script src="/app/shared/context/contextDirective.js"></script>
+    <!--COMPONENTS-->
+    <script src="/app/components/stronaGlowna/stronaGlownaDirective.js"></script>
+    <script src="/app/components/status/statusDirective.js"></script>
+    <script src="/app/components/sprawozdanie/sprawozdanieDirective.js"></script>
+    <script src="/app/components/oNas/oNasDirective.js"></script>
+    <script src="/app/components/linki/linkiDirective.js"></script>
+    <script src="/app/components/kontakt/kontaktDirective.js"></script>
+    <script src="/app/components/hymnAmazonek/hymnAmazonekDirective.js"></script>
+    <!--STYLE-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <!--JS-->
 </head>
-<body ng-app='appModule' ng-controller='mainController'>
-  <main-header></main-header>
-  <main-context></main-context>
+
+<body ng-app='appModule' data-spy="scroll" data-target=".navbar" data-offset="50">
+    <main-header></main-header>
+    <main-context></main-context>
 </body>
+
 </html>
