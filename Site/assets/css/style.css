@@ -1,29 +1,86 @@
 body{
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 20px;
+	margin: 0 !important;
 }
-.stronaGlowna{
+
+#navBar{
+	width: 100%;
+	padding: 10px 0;
+	background-color: #c34f4f;
+	text-align: center;
+	border-top: 1px solid #751b1b;
+	border-bottom: 1px solid #751b1b;
+}
+
+ol.navOl{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol.navOl a{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol.navOl > li{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border-right: 1px dashed #751b1b;
+}
+
+ol.navOl > li:first-child{
+	border-left: 1px dashed #751b1b;
+}
+
+ol.navOl > li:hover{
+	background-color: #cf6969;
+}
+
+ol.navOl > li:hover > a{
+	color: #451717;
+}
+
+.sticky{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+#stronaGlowna{
   padding-top: 50px;
   background-color: #00ffff;
   color: #e6005c;
 }
-.oNas{
+#oNas{
   padding-top: 50px;
 }
-.status{
+#status{
   padding-top: 50px;
 }
-.sprawozdanie{
+#sprawozdanie{
   padding-top: 50px;
 }
-.hymnAmazonek{
+#hymnAmazonek{
   padding-top: 50px;
 }
-.linki{
+#linki{
   padding-top: 50px;
 }
-.kontakt{
+#kontakt{
   padding-top: 50px;
 }
-.container{
+#container{
   margin-right: auto;
   margin-left: auto;
   width: 80%;

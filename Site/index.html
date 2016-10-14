@@ -7,12 +7,13 @@
   <title>AmazonkiBP</title>
   <meta name="description" content=""/>
   <meta name="keywords" content=""/>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script> -->
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
   <script src="/app/app.module.js"></script>
   <!--<script src="/app/app.routes.js"></script>-->
@@ -20,26 +21,19 @@
   <script src="/app/shared/header/headerDirective.js"></script>
   <script src="/app/shared/context/contextDirective.js"></script>
   <!--COMPONENTS-->
-  <script src="/app/components/stronaGlowna/stronaGlownaController.js"></script>
   <script src="/app/components/stronaGlowna/stronaGlownaDirective.js"></script>
-  <script src="/app/components/status/statusController.js"></script>
   <script src="/app/components/status/statusDirective.js"></script>
-  <script src="/app/components/sprawozdanie/sprawozdanieController.js"></script>
   <script src="/app/components/sprawozdanie/sprawozdanieDirective.js"></script>
-  <script src="/app/components/oNas/oNasController.js"></script>
   <script src="/app/components/oNas/oNasDirective.js"></script>
-  <script src="/app/components/linki/linkiController.js"></script>
   <script src="/app/components/linki/linkiDirective.js"></script>
-  <script src="/app/components/kontakt/kontaktController.js"></script>
   <script src="/app/components/kontakt/kontaktDirective.js"></script>
-  <script src="/app/components/hymnAmazonek/hymnAmazonekController.js"></script>
   <script src="/app/components/hymnAmazonek/hymnAmazonekDirective.js"></script>
   <!--STYLE-->
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
   <!--JS-->
   <script src="/assets/js/navBar.js"></script>
 </head>
-<body ng-app='appModule' data-spy='scroll' data-target=".navbar" data-offset="50">
+<body ng-app='appModule' ng-controller='mainController'>
   <main-header></main-header>
   <main-context></main-context>
 </body>
