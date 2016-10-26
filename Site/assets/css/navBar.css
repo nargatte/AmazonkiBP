@@ -1,7 +1,7 @@
 /* navbar */
 .navbar-amazonki {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
+    background-color: transparent;
+    border-color: transparent;
 }
 /* title */
 .navbar-amazonki .navbar-brand {
@@ -17,19 +17,20 @@
 }
 .navbar-amazonki .navbar-nav > li > a:hover,
 .navbar-amazonki .navbar-nav > li > a:focus {
-    color: #333;
+    color: #5E5E5E;
+    background-color: transparent;
 }
 .navbar-amazonki .navbar-nav > .active > a,
 .navbar-amazonki .navbar-nav > .active > a:hover,
 .navbar-amazonki .navbar-nav > .active > a:focus {
     color: #555;
-    background-color: #E7E7E7;
+    background-color: transparent;
 }
 .navbar-amazonki .navbar-nav > .open > a,
 .navbar-amazonki .navbar-nav > .open > a:hover,
 .navbar-amazonki .navbar-nav > .open > a:focus {
     color: #555;
-    background-color: #D5D5D5;
+    background-color: transparent;
 }
 /* caret */
 .navbar-amazonki .navbar-nav > .dropdown > a .caret {
