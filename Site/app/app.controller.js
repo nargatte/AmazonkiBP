@@ -14,9 +14,13 @@ appModule.controller('mainController', ['$scope', function($scope) {
             angular.element($window).bind("scroll", function() {
                 if (this.pageYOffset >= 50) {
                     console.log('Scrolled below header.');
+                    var myEl = angular.element(document.querySelector('.navbar-amazonki'));
+                    myEl.addClass('navbar-amazonki-animation');
                     // add navbar class with background
                 } else {
                     console.log('Header is in view.');
+                    var myEl = angular.element(document.querySelector('.navbar-amazonki'));
+                    myEl.removeClass('navbar-amazonki-animation');
                     // remove navbar class
                 }
                 scope.$apply();

@@ -22,36 +22,36 @@ body{
 }
 #stronaGlowna{
   padding-top: 50px;
-  color: #e6005c;
+  color: #ffffff;
 
-	background-image:url("../../images/lotus-stronaGlowna.jpeg");
+	background-image:url("../../images/water-lily.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 		height: 100vh;
 }
 #oNas{
   padding-top: 50px;
-  background-color: #ffccff;
+  background-color: #ffffff;
 }
 #status{
   padding-top: 50px;
-  background-color: #eaeaae;
+  background-color: #ffffff;
 }
 #sprawozdanie{
   padding-top: 50px;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
 }
 #hymnAmazonek{
   padding-top: 50px;
-  background-color: #65e2ff;
+  background-color: #ffffff;
 }
 #linki{
   padding-top: 50px;
-  background-color: #ff8265;
+  background-color: #ffffff;
 }
 #kontakt{
   padding-top: 50px;
-  background-color: #add8e6;
+  background-color: #ffffff;
 }
 #container{
   margin-right: auto;
