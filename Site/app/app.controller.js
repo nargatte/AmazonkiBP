@@ -14,14 +14,12 @@ appModule.controller('mainController', ['$scope', function($scope) {
             angular.element($window).bind("scroll", function() {
                 if (this.pageYOffset >= 50) {
                     console.log('Scrolled below header.');
-                    var myEl = angular.element(document.querySelector('.navbar-amazonki'));
-                    myEl.addClass('navbar-amazonki-animation');
-                    // add navbar class with background
+                    var myEl = angular.element(document.querySelector('#navBar'));
+                    myEl.addClass('navbar-amazonki-animation').removeClass('navbar-amazonki');
                 } else {
                     console.log('Header is in view.');
-                    var myEl = angular.element(document.querySelector('.navbar-amazonki'));
-                    myEl.removeClass('navbar-amazonki-animation');
-                    // remove navbar class
+                    var myEl = angular.element(document.querySelector('#navBar'));
+                    myEl.addClass('navbar-amazonki').removeClass('navbar-amazonki-animation');
                 }
                 scope.$apply();
             });
