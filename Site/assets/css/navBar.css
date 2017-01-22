@@ -81,12 +81,19 @@
 }
 /* navbar TOP*/
 .navbar-amazonki {
-  background-color: transparent;
-    /*-webkit-animation: play .5s steps(9) forwards reverse;
-    -moz-animation: play .5s steps(10) infinite reverse;
-    -ms-animation: play .5s steps(10) infinite reverse;
-    -o-animation: play .5s steps(10) infinite reverse;
-    animation: play .5s steps(9) forwards reverse;*/
+    background-color: transparent;
+
+    -webkit-animation: play .5s steps(9) forwards;
+    -webkit-animation-direction: reverse;
+    -moz-animation: play .5s steps(10) forwards;
+    -moz-animation-direction: reverse;
+    -ms-animation: play .5s steps(10) forwards;
+    -ms-animation-direction: reverse;
+    -o-animation: play .5s steps(10) forwards;
+    -o-animation-direction: reverse;
+    animation: play .5s steps(9) forwards;
+    animation-direction: reverse;
+
     border: 0;
     font-family: 'Exo', sans-serif;
     font-size: 20px;
@@ -95,15 +102,22 @@
 /* title */
 
 .navbar-amazonki .navbar-brand {
-    /*-webkit-animation: play2 .5s steps(9) forwards reverse;
-    -moz-animation: play2 .5s steps(10) infinite reverse;
-    -ms-animation: play2 .5s steps(10) infinite reverse;
-    -o-animation: play2 .5s steps(10) infinite reverse;
-    animation: play2 .5s steps(9) forwards reverse;*/
+    -webkit-animation: play2 .5s steps(9) forwards;
+    -webkit-animation-direction: reverse;
+    -moz-animation: play2 .5s steps(10) forwards;
+    -moz-animation-direction: reverse;
+    -ms-animation: play2 .5s steps(10) forwards;
+    -ms-animation-direction: reverse;
+    -o-animation: play2 .5s steps(10) forwards;
+    -o-animation-direction: reverse;
+    animation: play2 .5s steps(9) forwards;
+    animation-direction: reverse;
+
     color: #ff3385;
     font-family: 'Lobster', cursive;
     font-size: 25px;
 }
+
 .navbar-amazonki .navbar-brand:hover, .navbar-amazonki .navbar-brand:focus {
     color: #ff0052;
     font-family: 'Lobster', cursive;
@@ -113,14 +127,21 @@
 /* link */
 
 .navbar-amazonki .navbar-nav > li > a {
-    /*-webkit-animation: play2 .5s steps(9) forwards reverse;
-    -moz-animation: play2 .5s steps(10) infinite reverse;
-    -ms-animation: play2 .5s steps(10) infinite reverse;
-    -o-animation: play2 .5s steps(10) infinite reverse;
-    animation: play2 .5s steps(9) forwards reverse;*/
+    -webkit-animation: play2 .5s steps(9) forwards;
+    -webkit-animation-direction: reverse;
+    -moz-animation: play2 .5s steps(10) forwards;
+    -moz-animation-direction: reverse;
+    -ms-animation: play2 .5s steps(10) forwards;
+    -ms-animation-direction: reverse;
+    -o-animation: play2 .5s steps(10) forwards;
+    -o-animation-direction: reverse;
+    animation: play2 .5s steps(9) forwards;
+    animation-direction: reverse;
+
     color: #ff3385;
     text-shadow: none;
 }
+
 .navbar-amazonki .navbar-nav > li > a:hover, .navbar-amazonki .navbar-nav > li > a:focus {
     color: #ff0052;
     background-color: transparent;
@@ -170,26 +191,35 @@
 }
 
 /* navbar After scroll*/
+.ng-navbar-amazonki{
+        border: 0;
+
+    background-color: #ff3385;
+}
 
 .navbar-amazonki-animation {
     border: 0;
 
+    background-color: #ff3385;
+
     -webkit-animation: play .5s steps(9) forwards;
-    -moz-animation: play .5s steps(10) infinite;
-    -ms-animation: play .5s steps(10) infinite;
-    -o-animation: play .5s steps(10) infinite;
+    -moz-animation: play .5s steps(10) forwards;
+    -ms-animation: play .5s steps(10) forwards;
+    -o-animation: play .5s steps(10) forwards;
     animation: play .5s steps(9) forwards;
     font-family: 'Exo', sans-serif;
     font-size: 20px;
 }
 /* title */
 
+
 .navbar-amazonki-animation .navbar-brand {
     -webkit-animation: play2 .5s steps(9) forwards;
-    -moz-animation: play2 .5s steps(10) infinite;
-    -ms-animation: play2 .5s steps(10) infinite;
-    -o-animation: play2 .5s steps(10) infinite;
+    -moz-animation: play2 .5s steps(10) forwards;
+    -ms-animation: play2 .5s steps(10) forwards;
+    -o-animation: play2 .5s steps(10) forwards;
     animation: play2 .5s steps(9) forwards;
+
     font-family: 'Lobster', cursive;
     font-size: 25px;
 }
@@ -201,13 +231,16 @@
 
 /* link */
 
+
 .navbar-amazonki-animation .navbar-nav > li > a {
   text-shadow: none;
-    -webkit-animation: play2 .5s steps(9) forwards;
-    -moz-animation: play2 .5s steps(10) infinite;
-    -ms-animation: play2 .5s steps(10) infinite;
-    -o-animation: play2 .5s steps(10) infinite;
+  
+  -webkit-animation: play2 .5s steps(9) forwards;
+    -moz-animation: play2 .5s steps(10) forwards;
+    -ms-animation: play2 .5s steps(10) forwards;
+    -o-animation: play2 .5s steps(10) forwards;
     animation: play2 .5s steps(9) forwards;
+
 }
 .navbar-amazonki-animation .navbar-nav > li > a:hover, .navbar-amazonki-animation .navbar-nav > li > a:focus {
     color: #ff0052;
