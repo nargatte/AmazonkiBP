@@ -116,6 +116,7 @@
     color: #ff3385;
     font-family: 'Lobster', cursive;
     font-size: 25px;
+    outline: 0;
 }
 
 .navbar-amazonki .navbar-brand:hover, .navbar-amazonki .navbar-brand:focus {
@@ -140,6 +141,7 @@
 
     color: #ff3385;
     text-shadow: none;
+    outline: 0;
 }
 
 .navbar-amazonki .navbar-nav > li > a:hover, .navbar-amazonki .navbar-nav > li > a:focus {
@@ -222,6 +224,7 @@
 
     font-family: 'Lobster', cursive;
     font-size: 25px;
+    outline: 0; 
 }
 .navbar-amazonki-animation .navbar-brand:hover, .navbar-amazonki-animation .navbar-brand:focus {
     color: #ff0052;
@@ -234,7 +237,9 @@
 
 .navbar-amazonki-animation .navbar-nav > li > a {
   text-shadow: none;
-  
+  outline: 0;
+
+
   -webkit-animation: play2 .5s steps(9) forwards;
     -moz-animation: play2 .5s steps(10) forwards;
     -ms-animation: play2 .5s steps(10) forwards;

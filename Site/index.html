@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
-<html lang="pl" ng-app='appModule'>
+
+<!DOCTYPE html>
+<html lang="pl" ng-app="appModule">
 
 <head>
     <meta charset="utf-8" />
@@ -18,8 +19,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script src="http://rawgit.com/angular-ui/angular-google-maps/2.0.X/dist/angular-google-maps.js"></script>
 
 
 
@@ -36,6 +40,7 @@
     <script src="/app/components/linki/linkiDirective.js"></script>
     <script src="/app/components/kontakt/kontaktDirective.js"></script>
     <script src="/app/components/hymnAmazonek/hymnAmazonekDirective.js"></script>
+    <script src="/app/components/footnote/footnoteDirective.js"></script>
     <!--STYLE-->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/navBar.css" />
@@ -48,11 +53,13 @@
     <script src="/assets/js/main.js"></script>
 </head>
 
-<body ng-controller='mainController' scroll data-spy="scroll" data-target=".navbar" data-offset="50">
+<body ng-controller="mainController" scroll data-spy="scroll" data-target=".navbar" data-offset="50">
     <main-header></main-header>
-    <div id=mainContext>
-    <main-context></main-context>
-  </div>
+    <div id="mainContext">
+        <main-context></main-context>
+    </div>
+    <footnote-directive></footnote-directive>
+
 </body>
 
 </html>

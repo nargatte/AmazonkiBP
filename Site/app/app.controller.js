@@ -1,4 +1,5 @@
-appModule.controller('mainController', ['$scope', '$rootScope', function ($scope, $rootScope) {
+appModule.controller('mainController', function ($scope, $rootScope) {
+        $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
         $scope.scrollAnimation = function(obj) {
             obj.preventDefault();
             var goto = angular.element(obj.currentTarget).attr('href');
@@ -8,7 +9,7 @@ appModule.controller('mainController', ['$scope', '$rootScope', function ($scope
             }, 500);
         };
 
-    }])
+    })
     .directive("scroll", function($window) {
         return function(scope, element, attrs) {
             angular.element($window).bind("scroll", function() {
@@ -21,8 +22,8 @@ appModule.controller('mainController', ['$scope', '$rootScope', function ($scope
                     myEl.removeClass('navbar-amazonki');
                     setTimeout(function () {
                         myEl.addClass('navbar-amazonki-animation');
-                    }, 0.001);
-                    
+                    }, 0.0000000001);
+
                 } else {
                     console.log('Header is in view.');
 
@@ -33,8 +34,8 @@ appModule.controller('mainController', ['$scope', '$rootScope', function ($scope
                     myEl.removeClass('navbar-amazonki-animation');
                     setTimeout(function () {
                         myEl.addClass('navbar-amazonki');
-                    }, 0.001);
-                    
+                    }, 0.0000000001);
+
                 }
                 scope.$apply();
             });
