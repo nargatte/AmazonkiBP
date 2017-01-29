@@ -6,21 +6,45 @@
   width: 70%;
   border: 3px solid #ff3385;
   color: #000000;
-  text-align: justify;
+  text-align: left;
   padding: 30px;
 }
 .btn-more{
     border-radius: 30px;
-  margin-top: 30px;
+  vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
   border: 3px solid #ff3385;
-  color: #000000;
+  color: #ff3385;
   background-color: transparent;
   padding: 20px;
+  outline: 0;
 }
 .textHymnAmazonek{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+.textOnas{
+  margin-left: auto;
+  margin-right: auto;
+}
+.ciemnePrzez{
+  background: rgba(0, 0, 0, 0.7);
+    -pie-background:  rgba(0, 0, 0, 0.7);
+    padding: 0px;
+    display: inline-block;
+    border-radius: 30px;
+}
+.containerGlowna{
+
+}
+#glownaImage{
+  background-image: url("/images/lif-2xguzem-miro-dozo.jpg");
+  background-size: 100%;
+  padding: 200px;
+  width: 100%;
+}
+#oNasContainer{
+
 }
