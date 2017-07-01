@@ -22,27 +22,18 @@ appModule.controller('mainController', function($scope, $location, anchorSmoothS
     return function(scope, element, attrs) {
       angular.element($window).bind("scroll", function() {
         if (this.pageYOffset >= 55) {
-          console.log('Scrolled below header.');
+          // console.log('Scrolled below header.');
 
           scope.headerAnimation = 'navbar-amazonki';
 
           var myEl = angular.element(document.querySelector('#navBar'));
-          // myEl.removeClass('navbar-amazonki');
-          // setTimeout(function() {
-          //   myEl.addClass('navbar-amazonki-animation');
-          // }, 0.00001);
 
         } else {
-          console.log('Header is in view.');
+          // console.log('Header is in view.');
 
           scope.headerAnimation = '';
 
           var myEl = angular.element(document.querySelector('#navBar'));
-
-          // myEl.removeClass('navbar-amazonki-animation');
-          // setTimeout(function() {
-          //   myEl.addClass('navbar-amazonki');
-          // }, 0.6);
 
         }
         scope.$apply();

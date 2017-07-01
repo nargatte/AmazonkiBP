@@ -15,11 +15,12 @@
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid #ff3385;
+  border: none;
   color: #ff3385;
   background-color: transparent;
   padding: 20px;
   outline: 0;
+  font-size: 20px;
 }
 
 .textHymnAmazonek {
@@ -31,23 +32,33 @@
 .textOnas {
   margin-left: auto;
   margin-right: auto;
+  font-size: 20px;
+  line-height: 2em;
+  text-align: justify;
 }
 
 .ciemnePrzez {
   background: rgba(0, 0, 0, 0.7);
   -pie-background: rgba(0, 0, 0, 0.7);
-  padding: 0px;
+  padding: 20px;
   display: inline-block;
   border-radius: 30px;
+  color: #ff3385;
+  font-size: 25px;
 }
 
 .containerGlowna {
-  padding-top: 70px;
+  /*padding-top: 70px;*/
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 10%;
   width: 100%;
   text-align: center;
+}
+
+.amazonki-motto{
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
 }
 
 #glownaImage {

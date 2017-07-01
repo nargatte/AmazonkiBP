@@ -10,7 +10,6 @@
   "private": true,
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-google-maps": "^2.4.1",
-    "angular-bootstrap": "^2.5.0"
+    "angular-google-maps": "^2.4.1"
   }
 }
