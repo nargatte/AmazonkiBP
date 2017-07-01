@@ -1,0 +1,24 @@
+{
+  "name": "amazonkibp",
+  "version": "1.0.0",
+  "description": "strona internetowa bialskopodlaskie amazonki",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server ./Site -a localhost -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiaso11/AmazonkiBP.git"
+  },
+  "author": "Maciej Krzysiak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiaso11/AmazonkiBP/issues"
+  },
+  "homepage": "https://github.com/matiaso11/AmazonkiBP#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "http-server": "^0.10.0"
+  }
+}
