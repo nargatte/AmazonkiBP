@@ -1,296 +1,86 @@
-@-webkit-keyframes play {
-  from {
-    background-color: transparent;
-  }
-    to {
-        background-color: #ff3385;
-    }
+.navbar {
+  width: 100%;
+	padding-top: 15px;
+  padding-bottom: 15px;
+
+  position: fixed;
+  text-align: center;
+  z-index: 100;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  transition: background-color 1s;
 }
-@-moz-keyframes play {
-  from {
-    background-color: transparent;
-  }
-    to {
-        background-color: #ff3385;
-    }
+.navbar ul {
+  list-style-type: none;
+  display: inline-block;
 }
-@-ms-keyframes play {
-  from {
-    background-color: transparent;
-  }
-    to {
-        background-color: #ff3385;
-    }
+.navbar ul a {
+  text-decoration: none;
+  padding: 0 20px;
+  display: block;
+  color: #ff3385;
+
+  transition: color 1s;
 }
-@-o-keyframes play {
-  from {
-    background-color: transparent;
-  }
-    to {
-        background-color: #ff3385;
-    }
+.navbar ul > li {
+
+  float: left;
 }
-@keyframes play {
-  from {
-    background-color: transparent;
-  }
-    to {
-        background-color: #ff3385;
-    }
+.navbar ul > li:last-child {
+  /*clear: both;*/
 }
 
-@-webkit-keyframes play2 {
-  from{
-        color: #ff3385;
-  }
-    to {
-        color: #ffffff;
-    }
+.navbar-header{
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  outline: 0;
+  float:left;
+  position: fixed;
 }
-@-moz-keyframes play2 {
-  from{
-        color: #ff3385;
-  }
-    to {
-        color: #ffffff;
-    }
+.navbar-header a{
+  text-decoration: none;
+  color: #ff3385;
+
+  transition: color 1s;
 }
-@-ms-keyframes play2 {
-  from{
-        color: #ff3385;
-  }
-    to {
-        color: #ffffff;
-    }
+
+.navbar-nav{
+  text-shadow: none;
+  margin: 0 !important;
+  font-family: 'Exo', sans-serif;
+  font-size: 20px;
+  height: 25px;
 }
-@-o-keyframes play2 {
-  from{
-        color: #ff3385;
-  }
-    to {
-        color: #ffffff;
-    }
-}
-@keyframes play2 {
-  from{
-        color: #ff3385;
-  }
-    to {
-        color: #ffffff;
-    }
-}
-/* navbar TOP*/
+
 .navbar-amazonki {
-    background-color: transparent;
-
-    -webkit-animation: play .5s steps(9) forwards;
-    -webkit-animation-direction: reverse;
-    -moz-animation: play .5s steps(10) forwards;
-    -moz-animation-direction: reverse;
-    -ms-animation: play .5s steps(10) forwards;
-    -ms-animation-direction: reverse;
-    -o-animation: play .5s steps(10) forwards;
-    -o-animation-direction: reverse;
-    animation: play .5s steps(9) forwards;
-    animation-direction: reverse;
-
-    border: 0;
-    font-family: 'Exo', sans-serif;
-    font-size: 20px;
+    background-color: #ff3385;
+    color: #ffffff;
 }
 
 /* title */
 
 .navbar-amazonki .navbar-brand {
-    -webkit-animation: play2 .5s steps(9) forwards;
-    -webkit-animation-direction: reverse;
-    -moz-animation: play2 .5s steps(10) forwards;
-    -moz-animation-direction: reverse;
-    -ms-animation: play2 .5s steps(10) forwards;
-    -ms-animation-direction: reverse;
-    -o-animation: play2 .5s steps(10) forwards;
-    -o-animation-direction: reverse;
-    animation: play2 .5s steps(9) forwards;
-    animation-direction: reverse;
-
-    color: #ff3385;
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
-    outline: 0;
+  color: #ffffff;
 }
 
 .navbar-amazonki .navbar-brand:hover, .navbar-amazonki .navbar-brand:focus {
     color: #ff0052;
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #ff0052;
 }
 
 /* link */
 
 .navbar-amazonki .navbar-nav > li > a {
-    -webkit-animation: play2 .5s steps(9) forwards;
-    -webkit-animation-direction: reverse;
-    -moz-animation: play2 .5s steps(10) forwards;
-    -moz-animation-direction: reverse;
-    -ms-animation: play2 .5s steps(10) forwards;
-    -ms-animation-direction: reverse;
-    -o-animation: play2 .5s steps(10) forwards;
-    -o-animation-direction: reverse;
-    animation: play2 .5s steps(9) forwards;
-    animation-direction: reverse;
-
-    color: #ff3385;
-    text-shadow: none;
-    outline: 0;
+    color: #ffffff;
 }
 
 .navbar-amazonki .navbar-nav > li > a:hover, .navbar-amazonki .navbar-nav > li > a:focus {
     color: #ff0052;
-    background-color: transparent;
 }
-.navbar-amazonki .navbar-nav > .active > a, .navbar-amazonki .navbar-nav > .active > a:hover, .navbar-amazonki .navbar-nav > .active > a:focus {
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
     color: #ff0052;
-    background-color: transparent;
-}
-.navbar-amazonki .navbar-nav > .open > a, .navbar-amazonki .navbar-nav > .open > a:hover, .navbar-amazonki .navbar-nav > .open > a:focus {
-    color: #ff0052;
-    background-color: transparent;
-}
-
-/* caret */
-
-.navbar-amazonki .navbar-nav > .dropdown > a .caret {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-}
-.navbar-amazonki .navbar-nav > .dropdown > a:hover .caret, .navbar-amazonki .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-}
-.navbar-amazonki .navbar-nav > .open > a .caret, .navbar-amazonki .navbar-nav > .open > a:hover .caret, .navbar-amazonki .navbar-nav > .open > a:focus .caret {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-}
-
-/* mobile version */
-
-.navbar-amazonki .navbar-toggle {
-    border-color: #DDD;
-}
-.navbar-amazonki .navbar-toggle:hover, .navbar-amazonki .navbar-toggle:focus {
-    background-color: #DDD;
-}
-.navbar-amazonki .navbar-toggle .icon-bar {
-    background-color: #CCC;
-}
-@media (max-width: 767px) {
-    .navbar-amazonki .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
-    }
-    .navbar-amazonki .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-amazonki .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
-    }
-}
-
-/* navbar After scroll*/
-.ng-navbar-amazonki{
-        border: 0;
-
-    background-color: #ff3385;
-}
-
-.navbar-amazonki-animation {
-    border: 0;
-
-    background-color: #ff3385;
-
-    -webkit-animation: play .5s steps(9) forwards;
-    -moz-animation: play .5s steps(10) forwards;
-    -ms-animation: play .5s steps(10) forwards;
-    -o-animation: play .5s steps(10) forwards;
-    animation: play .5s steps(9) forwards;
-    font-family: 'Exo', sans-serif;
-    font-size: 20px;
-}
-/* title */
-
-
-.navbar-amazonki-animation .navbar-brand {
-    -webkit-animation: play2 .5s steps(9) forwards;
-    -moz-animation: play2 .5s steps(10) forwards;
-    -ms-animation: play2 .5s steps(10) forwards;
-    -o-animation: play2 .5s steps(10) forwards;
-    animation: play2 .5s steps(9) forwards;
-
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
-    outline: 0; 
-}
-.navbar-amazonki-animation .navbar-brand:hover, .navbar-amazonki-animation .navbar-brand:focus {
-    color: #ff0052;
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
-}
-
-/* link */
-
-
-.navbar-amazonki-animation .navbar-nav > li > a {
-  text-shadow: none;
-  outline: 0;
-
-
-  -webkit-animation: play2 .5s steps(9) forwards;
-    -moz-animation: play2 .5s steps(10) forwards;
-    -ms-animation: play2 .5s steps(10) forwards;
-    -o-animation: play2 .5s steps(10) forwards;
-    animation: play2 .5s steps(9) forwards;
-
-}
-.navbar-amazonki-animation .navbar-nav > li > a:hover, .navbar-amazonki-animation .navbar-nav > li > a:focus {
-    color: #ff0052;
-    background-color: transparent;
-}
-.navbar-amazonki-animation .navbar-nav > .active > a, .navbar-amazonki-animation .navbar-nav > .active > a:hover, .navbar-amazonki-animation .navbar-nav > .active > a:focus {
-    color: #ff0052;
-    background-color: transparent;
-}
-.navbar-amazonki-animation .navbar-nav > .open > a, .navbar-amazonki-animation .navbar-nav > .open > a:hover, .navbar-amazonki-animation .navbar-nav > .open > a:focus {
-    color: #ff0052;
-    background-color: transparent;
-}
-
-/* caret */
-
-.navbar-amazonki-animation .navbar-nav > .dropdown > a .caret {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-}
-.navbar-amazonki-animation .navbar-nav > .dropdown > a:hover .caret, .navbar-amazonki-animation .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-}
-.navbar-amazonki-animation .navbar-nav > .open > a .caret, .navbar-amazonki-animation .navbar-nav > .open > a:hover .caret, .navbar-amazonki-animation .navbar-nav > .open > a:focus .caret {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-}
-
-/* mobile version */
-
-.navbar-amazonki-animation .navbar-toggle {
-    border-color: #DDD;
-}
-.navbar-amazonki-animation .navbar-toggle:hover, .navbar-amazonki-animation .navbar-toggle:focus {
-    background-color: #DDD;
-}
-.navbar-amazonki-animation .navbar-toggle .icon-bar {
-    background-color: #CCC;
-}
-@media (max-width: 767px) {
-    .navbar-amazonki-animation .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
-    }
-    .navbar-amazonki-animation .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-amazonki-animation .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
-    }
 }

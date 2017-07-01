@@ -1,43 +1,51 @@
-appModule.controller('mainController', function ($scope, $rootScope) {
-        $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
-        $scope.scrollAnimation = function(obj) {
-            obj.preventDefault();
-            var goto = angular.element(obj.currentTarget).attr('href');
+appModule.controller('mainController', function($scope, $location, anchorSmoothScroll) {
+    $scope.map = {
+      center: {
+        latitude: 45,
+        longitude: -73
+      },
+      zoom: 8
+    };
 
-            $('html, body').animate({
-                scrollTop: $(goto).offset().top
-            }, 500);
-        };
+    $scope.gotoElement = function(eID) {
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      $location.hash('bottom');
 
-    })
-    .directive("scroll", function($window) {
-        return function(scope, element, attrs) {
-            angular.element($window).bind("scroll", function() {
-                if (this.pageYOffset >= 50) {
-                    console.log('Scrolled below header.');
+      // call $anchorScroll()
+      anchorSmoothScroll.scrollTo(eID);
 
-                    scope.headerAnimation = true;
+    };
 
-                    var myEl = angular.element(document.querySelector('#navBar'));
-                    myEl.removeClass('navbar-amazonki');
-                    setTimeout(function () {
-                        myEl.addClass('navbar-amazonki-animation');
-                    }, 0.0000000001);
+  })
+  .directive("scroll", function($window) {
+    return function(scope, element, attrs) {
+      angular.element($window).bind("scroll", function() {
+        if (this.pageYOffset >= 55) {
+          console.log('Scrolled below header.');
 
-                } else {
-                    console.log('Header is in view.');
+          scope.headerAnimation = 'navbar-amazonki';
 
-                    scope.headerAnimation = false;
+          var myEl = angular.element(document.querySelector('#navBar'));
+          // myEl.removeClass('navbar-amazonki');
+          // setTimeout(function() {
+          //   myEl.addClass('navbar-amazonki-animation');
+          // }, 0.00001);
 
-                    var myEl = angular.element(document.querySelector('#navBar'));
+        } else {
+          console.log('Header is in view.');
 
-                    myEl.removeClass('navbar-amazonki-animation');
-                    setTimeout(function () {
-                        myEl.addClass('navbar-amazonki');
-                    }, 0.0000000001);
+          scope.headerAnimation = '';
 
-                }
-                scope.$apply();
-            });
-        };
-    });
+          var myEl = angular.element(document.querySelector('#navBar'));
+
+          // myEl.removeClass('navbar-amazonki-animation');
+          // setTimeout(function() {
+          //   myEl.addClass('navbar-amazonki');
+          // }, 0.6);
+
+        }
+        scope.$apply();
+      });
+    };
+  });

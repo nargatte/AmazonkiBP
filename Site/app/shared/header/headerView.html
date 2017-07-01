@@ -1,36 +1,24 @@
-<nav id="navBar" class="navbar navbar-amazonki navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a ng-click='scrollAnimation($event)' class="navbar-brand" href="#stronaGlowna">Amazonki Biała Podlaska</a>
-        </div>
-        <div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" id="myTabs">
-                    <li>
-                        <a ng-click='scrollAnimation($event)' href="#oNas">O nas</a>
-                    </li>
-                    <!--<li>
-                        <a ng-click='scrollAnimation($event)' href="#status">Status</a>
-                    </li>
-                    <li>
-                        <a ng-click='scrollAnimation($event)' href="#sprawozdanie">Sprawozdanie</a>
-                    </li>-->
-                    <li>
-                        <a ng-click='scrollAnimation($event)' href="#hymnAmazonek">Hymn Amazonek</a>
-                    </li>
-                    <li>
-                        <a ng-click='scrollAnimation($event)' href="#linki">Linki</a>
-                    </li>
-                    <li>
-                        <a ng-click='scrollAnimation($event)' href="#kontakt">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<nav id="navBar" class="navbar" ng-class='headerAnimation'>
+  <div class="navbar-header">
+    <a ng-click='gotoElement("stronaGlowna")' class="navbar-brand" href="">Amazonki Biała Podlaska</a>
+  </div>
+  <!-- <div class="navbar-nav-container"> -->
+  <ul class="navbar-nav">
+    <li>
+      <a ng-click='gotoElement("oNas")' href="">O nas</a>
+    </li>
+    <li>
+      <a ng-click='gotoElement("hymnAmazonek")' href="">Hymn Amazonek</a>
+    </li>
+    <li>
+      <a ng-click='gotoElement("linki")' href="">Linki</a>
+    </li>
+    <li>
+      <a ng-click='gotoElement("kontakt")' href="">Kontakt</a>
+    </li>
+    <li>
+      <a ng-click='gotoElement("1%")' href="">1%</a>
+    </li>
+  </ul>
+<!-- </div> -->
 </nav>

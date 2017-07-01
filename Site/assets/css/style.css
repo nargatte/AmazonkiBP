@@ -6,15 +6,6 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 }
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
 
 #mainContext{
 	width: 80%;
@@ -30,16 +21,13 @@ body{
 }
 
 #navBar{
+
 }
-#myNavbar{
-}
-#myTabs{
-}
+
 #stronaGlowna{
-	padding-top: 70px;
   color: #ffffff;
 
-	/*height: 100vh;*/
+	height: 100vh;
 }
 #oNas{
   padding-top: 50px;

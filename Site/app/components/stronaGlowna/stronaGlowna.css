@@ -1,5 +1,5 @@
-.textShortInfo{
-    border-radius: 30px;
+.textShortInfo {
+  border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -9,8 +9,9 @@
   text-align: left;
   padding: 30px;
 }
-.btn-more{
-    border-radius: 30px;
+
+.btn-more {
+  border-radius: 30px;
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
@@ -20,31 +21,46 @@
   padding: 20px;
   outline: 0;
 }
-.textHymnAmazonek{
+
+.textHymnAmazonek {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-.textOnas{
+
+.textOnas {
   margin-left: auto;
   margin-right: auto;
 }
-.ciemnePrzez{
+
+.ciemnePrzez {
   background: rgba(0, 0, 0, 0.7);
-    -pie-background:  rgba(0, 0, 0, 0.7);
-    padding: 0px;
-    display: inline-block;
-    border-radius: 30px;
+  -pie-background: rgba(0, 0, 0, 0.7);
+  padding: 0px;
+  display: inline-block;
+  border-radius: 30px;
 }
-.containerGlowna{
 
-}
-#glownaImage{
-  background-image: url("/images/lif-2xguzem-miro-dozo.jpg");
-  background-size: 100%;
-  padding: 200px;
+.containerGlowna {
+  padding-top: 70px;
+  position: absolute;
+  left: 0;
+  top: 40%;
   width: 100%;
+  text-align: center;
 }
-#oNasContainer{
 
+#glownaImage {
+  background-image: url("/images/lif-2xguzem-miro-dozo.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
+
+#oNasContainer {}
