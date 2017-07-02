@@ -32,9 +32,16 @@
 .textOnas {
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 2em;
+}
+
+.oNasSzpalta {
+  display:inline-block;
+  padding: 20px;
+  width: 25%;
   text-align: justify;
+  vertical-align:top;
 }
 
 .ciemnePrzez {

@@ -1,7 +1,5 @@
 .navbar {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
   position: fixed;
   text-align: center;
   z-index: 100;
@@ -12,11 +10,14 @@
 .navbar ul {
   list-style-type: none;
   display: inline-block;
+  margin: 10px;
+  /*padding: 0;*/
 }
 
 .navbar ul a {
   text-decoration: none;
-  padding: 0 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
   display: block;
   color: #ff3385;
   transition: color 1s;
@@ -26,19 +27,19 @@
   float: left;
 }
 
-.navbar ul>li:last-child {
-  /*clear: both;*/
-}
-
 .navbar-header {
   font-family: 'Lobster', cursive;
   font-size: 25px;
   outline: 0;
   float: left;
   position: fixed;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .navbar-header a {
+  padding: 10px 20px;
+  border-radius: 30px;
   text-decoration: none;
   color: #ff3385;
   transition: color 1s;
@@ -46,10 +47,9 @@
 
 .navbar-nav {
   text-shadow: none;
-  margin: 0 !important;
+  /*margin: 0 !important;*/
   font-family: 'Exo', sans-serif;
   font-size: 20px;
-  height: 25px;
 }
 
 .navbar-amazonki {
@@ -57,21 +57,20 @@
   color: #ffffff;
 }
 
-
 /* title */
 
 .navbar-amazonki .navbar-brand {
   color: #ffffff;
 }
 
-.navbar-amazonki .navbar-brand:hover, .navbar-amazonki .navbar-brand:focus {
-  color: #ff0052;
+.navbar-amazonki .navbar-brand:hover{
+  background-color: #ff1365;
 }
 
-.navbar-brand:hover, .navbar-brand:focus {
-  color: #ff0052;
+.navbar-brand:hover{
+  background-color: black;
+  transition: background-color 1s;
 }
-
 
 /* link */
 
@@ -79,10 +78,11 @@
   color: #ffffff;
 }
 
-.navbar-amazonki .navbar-nav>li>a:hover, .navbar-amazonki .navbar-nav>li>a:focus {
-  color: #ff0052;
+.navbar-amazonki .navbar-nav>li>a:hover{
+  background-color: #ff1365;
 }
 
-.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
-  color: #ff0052;
+.navbar-nav>li>a:hover{
+  background-color: black;
+  transition: background-color 1s;
 }
