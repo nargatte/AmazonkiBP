@@ -3,8 +3,17 @@ body{
 	color: #000000;
 	font-size: 20px;
 	margin: 0 !important;
-	font-family: 'Lato', sans-serif;
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'Exo', sans-serif;
 	font-size: 14px;
+}
+
+.dzialHead{
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  padding-bottom: 50px;
+	color: #ff3385;
+	padding-top: 20px;
 }
 
 #mainContext{
@@ -30,27 +39,31 @@ body{
 	height: 100vh;
 }
 #oNas{
-  padding-top: 50px;
+  padding-top: 55px;
+  background-color: #ffffff;
+}
+#procent{
+  padding-top: 55px;
   background-color: #ffffff;
 }
 #status{
-  padding-top: 50px;
+  padding-top: 55px;
   background-color: #ffffff;
 }
 #sprawozdanie{
-  padding-top: 50px;
+  padding-top: 55px;
   background-color: #ffffff;
 }
 #hymnAmazonek{
-  padding-top: 50px;
+  padding-top: 55px;
   background-color: #ffffff;
 }
 #linki{
-  padding-top: 50px;
+  padding-top: 55px;
   background-color: #ffffff;
 }
 #kontakt{
-  padding-top: 50px;
+  padding-top: 55px;
   background-color: #ffffff;
 }
 #container{

@@ -1,10 +1,28 @@
 appModule.controller('mainController', function($scope, $location, anchorSmoothScroll) {
     $scope.map = {
       center: {
-        latitude: 45,
-        longitude: -73
+        latitude: 52.046230,
+        longitude: 23.115166
       },
-      zoom: 8
+      zoom: 15
+    };
+
+    $scope.title = "trochę tekstu";
+
+    $scope.marker = {
+      id: 1,
+      coords: {
+        latitude: 52.046230,
+        longitude: 23.115166
+      },
+      options: {
+        draggable: false,
+        labelContent: '<div style="color:#ff3385; font-size:10px; background: rgba(0, 0, 0, 0.7); border-radius: 5px; padding:4px;">'+
+        'Bialskopodlaskie </br> Stowarzyszenie </br> Amazonek</div>',
+        labelAnchor: '40 -5',
+        labelClass: 'marker-labels',
+        labelVisible: true
+      }
     };
 
     $scope.gotoElement = function(eID) {

@@ -1,0 +1,14 @@
+.procentContainer{
+  padding-bottom: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ff3385;
+}
+.procentData1{
+  font-size: 60px;
+  padding-bottom: 50px;
+}
+.procentData2{
+  font-size: 30px;
+}

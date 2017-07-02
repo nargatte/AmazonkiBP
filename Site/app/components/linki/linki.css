@@ -1,0 +1,23 @@
+.linkiContainer{
+  width: 100%;
+}
+.linkContent{
+  width:100%;
+  text-align: center;
+  background-color: #ff3385;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+a .linkContent{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+a:hover .linkContent {
+  background-color: #ff1365;
+}
+a {
+  text-decoration: none;
+}
