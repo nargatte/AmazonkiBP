@@ -14,6 +14,7 @@
     <script src="/bower_modules/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
     <script src="/bower_modules/angular-google-maps/dist/angular-google-maps.min.js"></script>
 
+
     <script src="/app/app.module.js"></script>
     <script src="/app/app.controller.js"></script>
     <!--SHARED-->
@@ -29,6 +30,7 @@
     <script src="/app/components/hymnAmazonek/hymnAmazonekDirective.js"></script>
     <script src="/app/components/footnote/footnoteDirective.js"></script>
     <script src="/app/components/1Procent/1ProcentDirective.js"></script>
+    <script src="/app/components/oNas/statutDirective.js"></script>
     <!--STYLE-->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/navBar.css" />
@@ -45,9 +47,13 @@
 </head>
 
 <body ng-controller="mainController" scroll data-spy="scroll" data-target=".navbar" data-offset="50">
-    <main-header></main-header>
+
+    <statut-directive ng-show="ifShowStatut"></statut-directive>
+    <div ng-show="ifNotShowStatut">
+      <main-header></main-header>
         <main-context></main-context>
     <footnote-directive></footnote-directive>
+  </div>
 
 </body>
 

@@ -21,6 +21,11 @@
   padding: 20px;
   outline: 0;
   font-size: 20px;
+  cursor:pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.btn-more:hover{
+  background-color: #ff1365;
 }
 
 .textHymnAmazonek {
@@ -42,6 +47,30 @@
   width: 30%;
   text-align: justify;
   vertical-align:top;
+}
+
+.btnStatut{
+  border-radius: 30px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: #ff3385;
+  color: white;
+  padding: 20px;
+  outline: 0;
+  font-size: 20px;
+  cursor:pointer;
+  width: 100%;
+}
+.btnStatut:hover{
+  background-color: #ff1365;
+}
+.statut{
+  float:left;
+  width: 70%;
+  text-align: justify;
+  padding: 40px;
 }
 
 .ciemnePrzez {

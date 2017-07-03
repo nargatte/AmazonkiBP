@@ -1,4 +1,6 @@
 appModule.controller('mainController', function($scope, $location, anchorSmoothScroll) {
+  $scope.ifShowStatut = false;
+  $scope.ifNotShowStatut = true;
     $scope.map = {
       center: {
         latitude: 52.046230,
@@ -17,8 +19,8 @@ appModule.controller('mainController', function($scope, $location, anchorSmoothS
       },
       options: {
         draggable: false,
-        labelContent: '<div style="color:#ff3385; font-size:10px; background: rgba(0, 0, 0, 0.7); border-radius: 5px; padding:4px;">'+
-        'Bialskopodlaskie </br> Stowarzyszenie </br> "Amazoneki"</div>',
+        labelContent: '<div style="color:#ff3385; font-size:10px; background: rgba(0, 0, 0, 0.7); border-radius: 5px; padding:4px;">' +
+          'Bialskopodlaskie </br> Stowarzyszenie </br> "Amazoneki"</div>',
         labelAnchor: '40 -5',
         labelClass: 'marker-labels',
         labelVisible: true
@@ -32,6 +34,21 @@ appModule.controller('mainController', function($scope, $location, anchorSmoothS
 
       // call $anchorScroll()
       anchorSmoothScroll.scrollTo(eID);
+
+    };
+
+    $scope.showStatut = function() {
+      $scope.ifShowStatut = true;
+      $scope.ifNotShowStatut = false;
+      window.scrollTo(0, 0);
+    };
+    $scope.hideStatut = function() {
+      $scope.ifShowStatut = false;
+      $scope.ifNotShowStatut = true;
+      setTimeout(
+        function(){
+          anchorSmoothScroll.scrollTo('oNas');
+        }, 0.1);
 
     };
 
