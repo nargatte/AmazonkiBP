@@ -3,19 +3,18 @@ appModule.controller('mainController', function($scope, $location, anchorSmoothS
   $scope.ifNotShowStatut = true;
     $scope.map = {
       center: {
-        latitude: 52.046230,
-        longitude: 23.115166
+        latitude: 52.03423083137626,
+        longitude: 23.110715071749624
       },
       zoom: 15
     };
-
     $scope.title = "trochę tekstu";
 
     $scope.marker = {
       id: 1,
       coords: {
-        latitude: 52.046230,
-        longitude: 23.115166
+        latitude: 52.03423083137626,
+        longitude: 23.110715071749624
       },
       options: {
         draggable: false,

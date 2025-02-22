@@ -1,0 +1,5 @@
+{
+	"name": "node",
+	"image": "node",
+	"runArgs": ["--network=host"]
+}
