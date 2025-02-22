@@ -98,7 +98,7 @@
 }
 
 #glownaImage {
-  background-image: url("/images/imageBackground1920.jpg");
+  background-image: url("./images/imageBackground1920.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
